@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/device_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/bolt_device_hint"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_min="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintWidth_min="250dp" />
+
+    <EditText
+        android:id="@+id/api_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/api_field_hint"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/device_name"
+        app:layout_constraintHeight_min="48dp"
+        app:layout_constraintStart_toStartOf="@+id/device_name"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintWidth_min="250dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/device_name"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/device_name"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--app:layout_constraintTop_toBottomOf="@+id/toolbar" /-->
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/api_key"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/api_key"
+        app:layout_constraintTop_toBottomOf="@+id/device_name" />
+
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/save"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/cm"
+        app:layout_constraintHeight_min="40dp"
+        app:layout_constraintStart_toStartOf="@+id/tank_height"
+        app:layout_constraintTop_toBottomOf="@+id/tank_height"
+        app:layout_constraintWidth_min="150dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/tank_height"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/api_key"
+        app:layout_constraintTop_toBottomOf="@+id/api_key" />
+
+    <TextView
+        android:id="@+id/cm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/cm"
+        app:layout_constraintBottom_toBottomOf="@+id/tank_height"
+        app:layout_constraintStart_toEndOf="@+id/tank_height"
+        app:layout_constraintTop_toTopOf="@+id/tank_height"
+        app:layout_constraintVertical_bias="0.482" />
+
+    <EditText
+        android:id="@+id/tank_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/_124cm"
+        android:inputType="number"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/cm"
+        app:layout_constraintHeight_min="48dp"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintWidth_min="250dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">WaterLevel</string>
+    <string name="pair">Pair Bolt Device</string>
+    <string name="bolt_device_hint">e.g.: BOLT0000001</string>
+    <string name="api_field_hint">16 alphanumeric api key from boltiot</string>
+    <string name="save">Save</string>
+    <string name="device_name">Device Name</string>
+    <string name="api_key">Api Key</string>
+    <string name="check">Check</string>
+    <string name="device_status">Device Status</string>
+    <string name="water_level">Water Level</string>
+    <string name="cm">cm</string>
+    <string name="tank_height">Tank Height</string>
+    <string name="_124">124</string>
+    <string name="checking_frequency">Checking Frequency</string>
+    <string name="_124cm">124</string>
+    <string name="day">Day</string>
+    <string name="hour">Hour</string>
+    <string name="min">Min</string>
+    <string name="_0">0</string>
+    <string name="colon">:</string>
+    <string name="channel_name">bolt_notification_channel</string>
+    <string name="channel_description">bolt notification</string>
+    <string name="device_offline">Device Offline</string>
+</resources>
